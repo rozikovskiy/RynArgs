@@ -63,4 +63,6 @@ g = dict(g)
 if "my_third_arg" in g.keys():
   print(g)
 ```
-[!Screen 1](../assets/unix_hashes/screen1.png)
+<div align="center">
+  <img src="../assets/unix_hashes/screen1.png" width="200" alt="Logo">
+</div>
