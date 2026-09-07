@@ -63,4 +63,4 @@ g = dict(g)
 if "my_third_arg" in g.keys():
   print(g)
 ```
-[](../assets/unix_hashes/screen1.png)
+[!Screen 1](../assets/unix_hashes/screen1.png)
