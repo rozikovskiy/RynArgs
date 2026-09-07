@@ -1,7 +1,7 @@
 from typing import Optional
 from .ryndiff import RynDiff
 from textwrap import wrap
-from sys import argv as args12_1
+from sys import argv as args_from_sys
 
 class RynArgsParseError(Exception):
     pass
@@ -118,11 +118,8 @@ class RynParse:
         else: self.arghelp[done] = f"{self.utilcmd}\033[0m {cook}\033[0m {use_example}\033[0m - {what_is_do}\033[0m"
         if mainset: self.mainset.add(done)
 
-    def parsing(self, descrip: Optional[str], args: Optional[list]):
-        if args:
-            arguments = args
-        else:
-            arguments = args12_1
+    def parsing(self, descrip: Optional[str], args: Optional[list] = args_from_sys):
+        arguments = args
         if not self.arglist: 
             raise NoArgumentsAdded("No candidates have been found for the search.")
         args=arguments[1:]
