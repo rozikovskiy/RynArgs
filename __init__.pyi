@@ -49,7 +49,8 @@ class RynParse:
     ) -> None: "Returns nothing but displays hints in the format '{utilcmd} {arg} {usage example} - {what it does}'"
 
     def parsing(self,
-        descrip: Optional[str] = "Insert the variable here where “description” was returned so that the description works with the help flag."
+        descrip: Optional[str] = "Insert the variable here where “description” was returned so that the description works with the help flag.",
+        args: Optional[list] = "If you insert a list of arguments, they will be parsed; otherwise, we will take the arguments from sys.argv."
         ) -> Dict[str, Any]: ...
     def log(self,
         message: str = "Your message",
