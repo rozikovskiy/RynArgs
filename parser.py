@@ -147,7 +147,7 @@ class RynParse:
                             print(self.arghelp[target_arg])
                         else:
                             print(descrip)
-                        if exit_after_help:
+                        if self.exit_after_help:
                             exit(0)
                         else:
                             return
